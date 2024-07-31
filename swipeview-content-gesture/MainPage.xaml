@@ -18,13 +18,18 @@
                 </SwipeItems>
             </SwipeView.RightItems>
 
-            <Label Padding="40" 
-                   Background="Pink" 
-                   Text="Swipeview content, tap me!">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                </Label.GestureRecognizers>
-            </Label>
+            <VerticalStackLayout>
+                <Label Padding="40" 
+                       Background="Pink" 
+                       Text="Swipeview content, tap me!">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <Button Padding="40"
+                        Text="swipeview content, tap me!"
+                        Clicked="Button_Clicked" />
+            </VerticalStackLayout>
         </SwipeView>
     </VerticalStackLayout>
 </ContentPage>

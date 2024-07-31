@@ -11,6 +11,11 @@ public partial class MainPage : ContentPage
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-        Debug.WriteLine("content tapped");
+        Debug.WriteLine("label tapped");
+    }
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        Debug.WriteLine("button tapped");
     }
 }
